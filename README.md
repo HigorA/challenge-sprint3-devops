@@ -4,6 +4,29 @@
 <p>Para acessar basta clicar no link abaixo:</p>
 <a href="http://challenge93359.eastus.azurecontainer.io:8080/swagger-ui/index.html#/">API, Clique Aqui.</a>
 
+
+<h2>Descrição</h2>
+<p>O objetivo da aplicação é utilizar o chatGPT para 
+aprimorar a expêriencia do usuário na busca e descoberta 
+de produtos. O chatGPT irá funcionar como um 
+assistente pessoal de compras que irá abstrair os termos 
+complexos dos produtos tornando-os de fácil compreensão para
+usuários leigos.</p>
+
+<h2>Beneficios</h2>
+<ul>
+    <li>
+        Aprimorar a expêriencia do usuário na busca e descoberta 
+        de produtos.
+    </li>
+    <li>
+        Facilitar a utilização para pessoas com deficiência visual.
+    </li>
+    <li>
+        Reconhecimento de voz integrado com uma poderosa Inteligência Artificial (I.A.).
+    </li>
+</ul>
+
 <h2>Testando Localmente</h2>
 <p>Para testar na máquina local, clone o projeto:</p>
 
