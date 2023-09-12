@@ -27,6 +27,10 @@ usuários leigos.</p>
     </li>
 </ul>
 
+<h2>Arquitetura</h2>
+
+![arquitetura](/images/arquitetura.PNG)
+
 <h2>Testando Localmente</h2>
 <p>Para testar na máquina local, clone o projeto:</p>
 
