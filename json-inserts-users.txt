@@ -1,0 +1,26 @@
+
+{
+  "name": "Higor",
+  "email": "higor.a.santos12@hotmail.com",
+  "password": "higor122"
+},
+{
+  "name": "karina",
+  "email": "karina@gmail.com",
+  "password": "senhakarina"
+},
+{
+  "name": "lucas",
+  "email": "lucas@gmail.com",
+  "password": "senhadolucas"
+},
+{
+  "name": "gabriela",
+  "email": "gabriela@gmail.com"
+  "password": "gabrielasenha"
+},
+{
+  "name": "marcus",
+  "email": "marcus.leite@gmail.com",
+  "password": "marcusleite"
+}

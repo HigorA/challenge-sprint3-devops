@@ -1,0 +1,45 @@
+ATENÇÂO COM AS ASPAS!!!!
+
+CREATE TABLE `users` (
+  `id_user` bigint NOT NULL AUTO_INCREMENT,
+  `account_non_expired` bit(1) DEFAULT NULL,
+  `account_non_locked` bit(1) DEFAULT NULL,
+  `credentials_non_expired` bit(1) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `enabled` bit(1) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id_user`),
+  UNIQUE KEY `UK_6dotkott2kjsp8vw4d0m25fb7` (`email`)
+)
+
+
+CREATE TABLE `permission` (
+  `id_permission` bigint NOT NULL AUTO_INCREMENT,
+  `description` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id_permission`)
+)
+
+
+CREATE TABLE users_permission (
+  users_id INT NOT NULL,
+  permission_id INT NOT NULL,
+  PRIMARY KEY (users_id, permission_id),
+  INDEX fk_users_permission_permission1_idx (permission_id ASC) VISIBLE,
+  CONSTRAINT fk_users_permission_users
+    FOREIGN KEY (users_id)
+    REFERENCES users (id),
+  CONSTRAINT fk_users_permission_permission1
+    FOREIGN KEY (permission_id)
+    REFERENCES permission (id)
+)
+
+CREATE TABLE `favorites` (
+  `id_favorite` bigint NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) DEFAULT NULL,
+  `url` varchar(11400) DEFAULT NULL,
+  `id_user` bigint NOT NULL,
+  PRIMARY KEY (`id_favorite`),
+  KEY `FKksy4x2jag0w6ta90lvxrv6vym` (`id_user`),
+  CONSTRAINT `FKksy4x2jag0w6ta90lvxrv6vym` FOREIGN KEY (`id_user`) REFERENCES `users` (`id_user`)
+) 
