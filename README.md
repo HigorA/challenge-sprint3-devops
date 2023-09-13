@@ -155,3 +155,40 @@ az container create -g $(resourceGroup) --name $(appName) --image $(acrServer.io
 
 ![ConfigurandoRelease1](/images/criando_release.1.6.PNG)
 
+<h2>Json's de Teste</h2>
+<p>Json's de Favoritos</p>
+
+<h3>Post:</h3>
+
+```json
+    {
+        "title": "Google",
+        "url": "www.google.com",
+        "idUser": 8
+    }
+```
+
+<h3>Put:</h3>
+
+```json
+    {
+        "idFavorite": "Veja o ID que é retornado no método POST",
+        "title": "Google",
+        "url": "www.google.com",
+        "idUser": 8
+    }
+```
+
+<h3>Get:</h3>
+<p>Passar o id do usuario por parametro. Exemplo:</p>
+
+```code
+    http://challenge93359.eastus.azurecontainer.io:8080/favorite?userId=1
+```
+
+<h3>Delete:</h3>
+<p>Passar o id do favorito por parametro. Exemplo:</p>
+
+```code
+    http://challenge93359.eastus.azurecontainer.io:8080/favorite?favorite-id=13
+```
